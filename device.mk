@@ -418,6 +418,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=6 \
     dalvik.vm.image-dex2oat-threads=6
 
+# old-apns.conf
+PRODUCT_COPY_FILES += \
+    device/huawei/angler/old-apns-conf.xml:system/etc/old-apns-conf.xml
+
 # Modem debugger
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 ifeq (,$(filter aosp_angler, $(TARGET_PRODUCT)))
