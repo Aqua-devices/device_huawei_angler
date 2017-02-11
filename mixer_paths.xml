@@ -1697,8 +1697,8 @@
         <ctl name="Imon Enable" value="Off" />
         <ctl name="Vmon Enable" value="Off" />
         <ctl name="ClassD Only" value="On" />
-        <ctl name="Boost Output Voltage" value="6.5V" />
-        <ctl name="Left Speaker Gain" value="20" />
+        <ctl name="Boost Output Voltage" value="7.5V" />
+        <ctl name="Left Speaker Gain" value="17" />
         <ctl name="Receiver Enable" value="On" />
     </path>
 
