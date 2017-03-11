@@ -150,3 +150,7 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 USE_CLANG_PLATFORM_BUILD := true
 
 -include vendor/huawei/angler/BoardConfigVendor.mk
+
+#Include Magisk root
+DEFAULT_ROOT_METHOD := Magisk
+
