@@ -70,7 +70,7 @@ write /sys/devices/system/cpu/cpu4/online 1
 write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor interactive
 restorecon -R /sys/devices/system/cpu # must restore after interactive
 write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 384000
-write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 1958400
+write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 1728000
 write /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load 150
 write /sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay "20000 960000:40000 1248000:30000"
 write /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate 60000
