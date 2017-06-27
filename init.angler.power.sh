@@ -125,7 +125,7 @@ write /proc/sys/kernel/sched_boost 0
 write /sys/kernel/fp_boost/enabled 1
 
 # Set I/O Scheduler tweaks
-write /sys/block/mmcblk0/queue/scheduler maple
+write /sys/block/mmcblk0/queue/scheduler noop
 write /sys/block/mmcblk0/queue/read_ahead_kb 512
 write /sys/block/mmcblk0/queue/iosched/writes_starved 4
 write /sys/block/mmcblk0/queue/iosched/fifo_batch 16
@@ -164,3 +164,6 @@ get-set-forall /sys/devices/soc.0/qcom,bcl.*/mode enable
 
 # change GPU initial power level from 305MHz(level 4) to 180MHz(level 5) for power savings
 write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 5
+
+#  Lazyplug
+write /sys/module/lazyplug/parameters/lazyplug_active 0
