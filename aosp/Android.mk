@@ -30,4 +30,4 @@ LOCAL_POST_INSTALL_CMD := \
 
 include $(BUILD_PHONY_PACKAGE)
 
-endif # aosp_angler
+endif # angler
