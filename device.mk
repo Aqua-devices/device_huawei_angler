@@ -526,6 +526,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
 
+# Inherit custom memory configurations
+$(call inherit-product, vendor/aquarios/prebuilt/dalvik/phone-xxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product, vendor/aquarios/prebuilt/dalvik/phone-xxhdpi-3072-hwui-memory.mk)
+
+
 # drmservice prop
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
