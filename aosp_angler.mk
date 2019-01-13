@@ -24,19 +24,8 @@ PRODUCT_COPY_FILES := device/huawei/angler/apns-full-conf.xml:system/etc/apns-co
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := aosp_angler
-PRODUCT_DEVICE := angler
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on angler
-PRODUCT_MANUFACTURER := Huawei
-PRODUCT_RESTRICT_VENDOR_FILES := true
-
-$(call inherit-product, device/huawei/angler/device.mk)
-$(call inherit-product-if-exists, vendor/huawei/angler/device-vendor.mk)
-
 PRODUCT_PACKAGES += \
     Launcher3 \
-    WallpaperPicker
-
-PRODUCT_PACKAGES += \
-    AOSPLinks
+    WallpaperPicker \
+    AOSPLinks \
+    Camera2
