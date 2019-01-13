@@ -23,6 +23,7 @@ TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
 $(call inherit-product, device/huawei/angler/device.mk)
+$(call inherit-product, vendor/huawei/angler/device-vendor.mk)
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
