@@ -1,0 +1,12 @@
+[
+ {
+   "repository":	"Aqua-devices/kernel_huawei_angler",
+   "target_path":	"kernel/huawei/angler",
+   "branch":		"a9"
+ },
+ {
+   "repository":	"Aqua-devices/proprietary_vendor_huawei",
+   "target_path":	"vendor/huawei",
+   "branch":		"a9"
+ }
+]
